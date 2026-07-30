@@ -1,8 +1,27 @@
 aid: karius
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/karius.png
 name: Karius
-description: Karius is a company surfaced as a portfolio company of dcvc, general-catalyst, lightspeed-venture-partners,
-  softbank-vision-fund and added to the API Evangelist network as a stub for enrichment. This profile
-  is a lead awaiting the enrichment pipeline.
+description: >-
+  Karius is an infectious disease diagnostics company that applies clinical
+  metagenomics and machine learning to microbial cell-free DNA (mcfDNA) circulating
+  in the bloodstream, detecting pathogens that conventional culture-based testing
+  misses. Its CLIA-certified and CAP-accredited laboratory runs the Karius Spectrum
+  blood test, which screens a single blood draw for more than 1,000 bacteria, fungi,
+  DNA viruses, and parasites, and the Karius Focus BAL test, which detects more than
+  500 pathogens in bronchoalveolar lavage fluid for lung infections. Results are
+  returned to clinicians managing complex, immunocompromised, and
+  difficult-to-diagnose patients.
 url: https://raw.githubusercontent.com/api-evangelist/karius/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -15,12 +34,35 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Diagnostics
+- Genomics
+- Infectious Disease
+- Healthcare
+- Metagenomics
+- Laboratory
+- Precision Medicine
 apis: []
+common:
+- type: DomainSecurity
+  url: security/karius-domain-security.yml
+- type: Website
+  url: https://kariusdx.com
+- type: PrivacyPolicy
+  url: https://kariusdx.com/privacy-policy
+- type: TermsOfService
+  url: https://kariusdx.com/terms-and-conditions
+- type: Blog
+  url: https://kariusdx.com/about-us/news
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
